@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 45%;
+    height: 30px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+}
+
+.td {
+    padding-left: 30px;
+}
+
+.td1 {
+    padding-left: 70px;
+}
+
+.td2 {
+    padding-left: 48px;
+}
+
+.td3 {
+    padding-left: 45px;
+}
+
+td {
+    padding-top: 10px;
+}
+
+.mainWrap {
+    width: 85%;
+    height: 600px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.mainButton {
+    width: 100px;
+    margin-top: 20px;
+    background-color: white;
+    color: rgb(110, 172, 110);
+    border: 2px solid rgb(110, 172, 110);
+}
+
+.mainButton:hover {
+    color: white;
+    background-color: rgb(110, 172, 110);
+}
+
+.idWrap {
+    width: 50%;
+    float: right;
+}
+
+.textWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ml40 {
+    margin-left: 45px;
+}
+
+.ml10 {
+    margin-left: 15px;
+}
+
+.ml80 {
+    margin-left: 85px;
+}
+
+.ml35 {
+    margin-left: 35px;
+}
+
+.editButton,
+.deleteButton {
+    width: 50px;
+    background-color: orange;
+    border: none;
+}
+
+.editButton {
+    margin-left: 60px;
+}
+
+.deleteButton {
+    background-color: crimson;
+    margin-left: 45px;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: rgb(254, 203, 109);
+}
+
+.deleteButton:hover {
+    background-color: rgb(241, 109, 136);
+}

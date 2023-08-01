@@ -1,0 +1,40 @@
+<div class="mainWrap">
+    <div class="idWrap">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td class="td">Login</td>
+                    <td class="td">Password</td>
+                    <td class="td3">Email</td>
+                    <td class="td1">Edit</td>
+                    <td class="td2">Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td class="td"> {{ user.login }} </td>
+                    <td class="td"> {{ user.password }} </td>
+                    <td class="td"> {{ user.email }} </td>
+                    <td><input type="button" class="editButton" value="Edit" name="edit" (click)="editUser(i)"></td>
+                    <td><input type="button" class="deleteButton" value="Delete" name="delete" (click)="deleteUser(i)"></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form>
+        <p class="error one">Login</p>
+        <input type="text" [(ngModel)]="loginName" name="firstName" [class]="login" placeholder="Enter login"
+            id="text1">
+        <p class="error two">Password</p>
+        <input type="password" [(ngModel)]="passwordName" name="secondName" [class]="password"
+            placeholder="Enter password" id="text2">
+        <p class="error three">Email address</p>
+        <input type="text" [(ngModel)]="emailName" name="emailName" [class]="email" placeholder="Enter email"
+            id="text3">
+    </form>
+    <input type="button" value="Add user" [class]="addBtn" (click)="addUser()" *ngIf="!none" [disabled]="!emailName">
+    <input type="button" value="Edit user" [class]="helpBtn" (click)="saveEditUser()" *ngIf="none">
+</div>
